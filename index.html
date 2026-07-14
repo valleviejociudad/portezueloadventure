@@ -8,9 +8,13 @@
 	<!-- Made with Construct, the game and app creator :: https://www.construct.net -->
 	<meta name="generator" content="Scirra Construct">
 
+	<meta name="author" content="Esteban Guzzo">
+	<meta name="description" content="Juego hecho por la Municipalidad de Valle Viejo">
 
-
-
+	<link rel="manifest" href="appmanifest.json">
+	<link rel="apple-touch-icon" sizes="128x128" href="icons/icono-128.png">
+	<link rel="apple-touch-icon" sizes="256x256" href="icons/icono-256.png">
+	<link rel="apple-touch-icon" sizes="512x512" href="icons/icono-512.png">
 	<link rel="icon" type="image/png" href="icons/icono-512.png">
 
 	<link rel="stylesheet" href="style.css">
@@ -22,7 +26,13 @@
 <body>
 
 	
-	<script src="cordova.js"></script>
+
+<script>
+if (location.protocol.substr(0, 4) === "file")
+{
+	alert("Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)");
+}
+</script>
 	
 	<noscript>
 		<div id="notSupportedWrap">
@@ -32,8 +42,9 @@
 	</noscript>
 	<script src="scripts/modernjscheck.js"></script>
 	<script src="scripts/supportcheck.js"></script>
+	<script src="scripts/offlineclient.js" type="module"></script>
 	<script src="scripts/main.js" type="module"></script>
-
+	<script src="scripts/register-sw.js" type="module"></script>
 
 </body> 
 </html>
