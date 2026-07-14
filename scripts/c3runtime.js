@@ -1487,6 +1487,7 @@ self.C3_ExpressionFuncs = [
 			return () => and(and(Math.floor((v0.GetValue() / 60)), ":"), (((((v1.GetValue() % 60)) < (10) ? 1 : 0)) ? (and("0", (v2.GetValue() % 60))) : ((v3.GetValue() % 60))));
 		},
 		() => 180,
+		() => "menumusic",
 		() => 944,
 		p => {
 			const n0 = p._GetNode(0);

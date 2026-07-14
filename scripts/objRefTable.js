@@ -48,7 +48,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.System.Acts.GoToLayout,
-		C3.Plugins.Audio.Acts.StopAll,
+		C3.Plugins.Audio.Acts.Stop,
 		C3.Plugins.Sprite.Acts.SetPos,
 		C3.Behaviors.Tween.Acts.TweenOneProperty
 	];
