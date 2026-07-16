@@ -13,6 +13,11 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Audio,
 		C3.Behaviors.Tween,
 		C3.Behaviors.Sin,
+		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Plugins.System.Acts.SetVar,
+		C3.Plugins.Audio.Acts.Play,
+		C3.Plugins.Sprite.Acts.SetOpacity,
+		C3.Behaviors.Tween.Acts.TweenOneProperty,
 		C3.Plugins.Sprite.Cnds.OnCreated,
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Plugins.Keyboard.Cnds.IsKeyDown,
@@ -38,19 +43,20 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.EightDir.Acts.Stop,
 		C3.Behaviors.Platform.Acts.SetEnabled,
 		C3.Plugins.System.Acts.SetBoolVar,
-		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.Text.Acts.SetText,
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.Touch.Cnds.IsTouchingObject,
 		C3.Plugins.Touch.Cnds.OnTouchObject,
-		C3.Plugins.System.Acts.RestartLayout,
-		C3.Plugins.Mouse.Cnds.OnObjectClicked,
-		C3.Plugins.Audio.Acts.Play,
-		C3.Plugins.System.Cnds.OnLayoutStart,
-		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.Sprite.Cnds.IsVisible,
 		C3.Plugins.Audio.Acts.Stop,
+		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.System.Cnds.CompareBoolVar,
+		C3.Plugins.System.Acts.SetTimescale,
+		C3.Behaviors.Tween.Cnds.OnTweensFinished,
 		C3.Plugins.Sprite.Acts.SetPos,
-		C3.Behaviors.Tween.Acts.TweenOneProperty
+		C3.Plugins.Sprite.Cnds.OnAnimFinished,
+		C3.Plugins.System.Acts.Wait,
+		C3.Plugins.Sprite.Cnds.CompareInstanceVar
 	];
 };
 self.C3_JsPropNameTable = [
@@ -79,6 +85,14 @@ self.C3_JsPropNameTable = [
 	{Seno: 0},
 	{BotonComenzar: 0},
 	{CondorMenu: 0},
+	{Fade: 0},
+	{valleviejocidudad: 0},
+	{secretarialogo: 0},
+	{susanalogo: 0},
+	{FondoEnMosaico3: 0},
+	{Sprite: 0},
+	{estadoCondor: 0},
+	{CondorSaltando: 0},
 	{TiempoRestante: 0},
 	{GameOver: 0},
 	{Pausado: 0}
@@ -103,5 +117,12 @@ self.InstanceType = {
 	FondoEnMosaico2: class extends self.ITiledBackgroundInstance {},
 	Titulo: class extends self.ISpriteInstance {},
 	BotonComenzar: class extends self.ISpriteInstance {},
-	CondorMenu: class extends self.ISpriteInstance {}
+	CondorMenu: class extends self.ISpriteInstance {},
+	Fade: class extends self.ISpriteInstance {},
+	valleviejocidudad: class extends self.ISpriteInstance {},
+	secretarialogo: class extends self.ISpriteInstance {},
+	susanalogo: class extends self.ISpriteInstance {},
+	FondoEnMosaico3: class extends self.ITiledBackgroundInstance {},
+	Sprite: class extends self.ISpriteInstance {},
+	CondorSaltando: class extends self.ISpriteInstance {}
 }

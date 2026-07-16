@@ -1,7 +1,7 @@
 {
 	"name": "Portezuelo Adventure",
 	"short_name": "Portezuelo Adventure",
-	"description": "Juego hecho por la Municipalidad de Valle Viejo",
+	"description": "El Condor de Valle Viejo disfruta de un vuelo en parapente!",
 	"start_url": "index.html",
 	"display": "fullscreen",
 	"orientation": "landscape",
